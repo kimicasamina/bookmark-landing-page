@@ -5,7 +5,6 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
-  border: solid 1px red;
 }
 
 a, a:visited, a:active {
@@ -69,6 +68,20 @@ body {
   margin-left: 45px;
   font-size: 0.75rem;
   color: hsl(229deg, 31%, 21%);
+}
+.header .header-links a.login-btn {
+  background-color: hsl(0deg, 94%, 66%);
+  padding: 0.9375rem 2.1875rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  border: solid 1px hsl(0deg, 94%, 66%);
+  cursor: pointer;
+}
+.header .header-links a.login-btn:hover {
+  border: solid 1px hsl(0deg, 94%, 66%);
+  background-color: transparent;
+  color: hsl(0deg, 94%, 66%);
 }
 @media screen and (min-width: 500px) {
   .header .header-links {

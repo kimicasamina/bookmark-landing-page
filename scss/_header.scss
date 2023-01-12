@@ -42,11 +42,26 @@
      color: $veryDarkBlue;
     }
 
+    a.login-btn {
+      background-color: $softRed;
+      padding: 0.9375rem 2.1875rem; 
+      font-weight: 500;
+      color: white;
+      border-radius: 10px;
+      border: solid 1px $softRed;
+      cursor: pointer;
+      
+      &:hover {
+        border: solid 1px $softRed;
+        background-color: transparent;
+        color: $softRed;
+      }
+    }
+
     @media screen and (min-width: 500px) {
       display: flex;
       align-items: center;
     }
-    
   }
 }
 

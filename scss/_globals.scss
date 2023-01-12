@@ -33,7 +33,15 @@ body {
   }
 }
 
+// TEMPORARY
+// .logo-white color {
+//   color: #eee;
+// }
+
 // VISIBILITY 
+.hidden {
+  display: none !important;
+}
 // .hide-for-desktop {
 //   @media screen and (min-width: $mobile) {
 //     display: none;

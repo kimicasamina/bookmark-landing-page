@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .header {
   margin: 50px 25px;
 }
@@ -42,24 +46,60 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header .mobile-menu .menu-btn {
-  display: flex;
-}
-@media screen and (min-width: 500px) {
-  .header .mobile-menu .menu-btn {
+@media screen and (min-width: 23.4375rem) {
+  .header .burger-btn {
     display: none;
   }
 }
-.header .mobile-menu .close-btn {
-  display: none;
-}
-.header .header-logo, .header .mobile-menu {
+.header .mobile-nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(229deg, 31%, 21%);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+.header .mobile-nav .mobile-menu {
+  display: flex;
+  min-width: 90%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.header .mobile-nav .mobile-links {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.header .mobile-nav .mobile-links a {
+  padding: 25px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  border-top: 1px solid hsl(229deg, 8%, 60%);
+  color: hsl(229deg, 8%, 60%);
+}
+.header .mobile-nav .mobile-links a.login-btn {
+  border: solid 2px white;
+  color: white;
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.header .mobile-nav .social-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.header .menu-btn, .header .close-btn {
-  width: 25px;
-  height: 25px;
+.header .header-logo {
+  display: flex;
+  align-items: center;
 }
 .header .header-links {
   display: none;
@@ -83,7 +123,7 @@ body {
   background-color: transparent;
   color: hsl(0deg, 94%, 66%);
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 23.4375rem) {
   .header .header-links {
     display: flex;
     align-items: center;

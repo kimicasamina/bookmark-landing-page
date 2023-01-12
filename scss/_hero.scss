@@ -1,23 +1,59 @@
 .hero {
   margin: 50px 25px;
+  position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $softBlue;
+      width: 300px;
+      height: 40%;
+      top: 10%;
+      left: 20%;
+      border-radius: 50% 0 0 50%;
+      z-index: -5;
+    }
   @media screen and (min-width: $mobile) {
     margin: 45px;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $softBlue;
+      width: 400px;
+      height: 70%;
+      top: 50%;
+      left: 80%;
+      border-radius: 50% 0 0 50%;
+      z-index: -5;
+    }
   }
+
+  
+  
   
   .hero-content {
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    
     @media screen and (min-width: $mobile) {
       flex-direction: row;
       align-items: center;
       text-align: left;
     }
 
+    
+
   .hero-img {
     width: 100%;
     max-width: 580px;
     margin-inline: auto;
+    margin-bottom: 70px;
+
   }
   
   .hero-body {

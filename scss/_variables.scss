@@ -1,13 +1,16 @@
-$softbBlue: hsl(231, 69%, 60%);
+$softBlue: hsl(231, 69%, 60%);
 $softRed: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
 $veryDarkBlue: hsl(229, 31%, 21%);
+$gray: hsl(0, 0%, 97%);
 
 
 // FONTS 
-$font-sm: 1.125rem; // 18px
-// $font-md: 
+$font-sm: 0.875rem; // 14px
+$font-md: 1.125rem; // 18px
+$rubik: 'Rubik' sans-serif;
+
 
 // LAYOUT
-// $mobile: 23.4375rem; //375px
-// $desktop: 90rem; // 1440px
+$mobile: 23.4375rem; //375px
+$desktop: 90rem; // 1440px

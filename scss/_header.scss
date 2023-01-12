@@ -1,0 +1,52 @@
+.header {
+  margin: 50px 25px;
+  @media screen and (min-width: $mobile) {
+    margin: 45px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    .menu-btn {
+      display: flex;
+      @media screen and (min-width: 500px) {
+        display: none;
+      }
+    }
+
+    .close-btn {
+      display: none;
+    }
+  }
+
+
+  .header-logo, .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-btn, .close-btn {
+    width: 25px;
+    height: 25px;
+  }
+
+  .header-links {
+    display: none;
+    
+    a {
+     margin-left: 45px;
+     font-size: 0.75rem;
+     color: $veryDarkBlue;
+    }
+
+    @media screen and (min-width: 500px) {
+      display: flex;
+      align-items: center;
+    }
+    
+  }
+}
+

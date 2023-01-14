@@ -5,7 +5,6 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
-  border: solid 1px red;
 }
 
 h1, h2, h3, p {
@@ -26,6 +25,10 @@ button {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 body {
@@ -51,7 +54,7 @@ body {
 }
 
 .header {
-  margin: 50px 25px;
+  margin: 50px 20px;
 }
 @media screen and (min-width: 23.4375rem) {
   .header {
@@ -149,7 +152,7 @@ body {
 }
 
 .hero {
-  margin: 50px 25px;
+  margin: 50px 20px;
   position: relative;
 }
 .hero::after {
@@ -210,6 +213,7 @@ body {
 .hero .hero-content .hero-body p {
   font-size: clamp(0.625rem, 1vh + 1rem, 0.875rem);
   margin-bottom: 25px;
+  line-height: 2;
 }
 .hero .hero-content .hero-body .download-btn {
   margin-top: 25px;
@@ -238,4 +242,135 @@ body {
 }
 .hero .hero-content .hero-body .download-btn .firefox:hover {
   border: solid 1px hsl(229deg, 31%, 21%);
+}
+
+.features {
+  margin: 50px 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features {
+    margin: 45px;
+  }
+}
+.features .features-intro {
+  width: 100%;
+  max-width: 530px;
+  text-align: center;
+  margin-inline: auto;
+}
+.features .features-intro h2 {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .features-intro h2 {
+    font-size: 1.5rem;
+  }
+}
+.features .features-intro p {
+  font-size: 0.875rem;
+  line-height: 2;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .features-intro {
+    margin-bottom: 75px;
+  }
+}
+.features .tab {
+  overflow: hidden;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.features .tab li {
+  padding: 20px 60px;
+  border: none;
+  border-bottom: solid 1px hsl(229deg, 8%, 60%);
+}
+.features .tab li:hover {
+  border-bottom: solid 2px hsl(0deg, 94%, 66%);
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .tab {
+    flex-direction: row;
+  }
+}
+.features .tabcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .tabcontent {
+    flex-direction: row;
+  }
+}
+.features .panel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 70px;
+}
+.features .panel img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+.features .panel .panel-body {
+  width: 100%;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .panel {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .features .panel img {
+    margin-right: 60px;
+  }
+  .features .panel .panel-body {
+    flex: 1;
+  }
+}
+.features .panel {
+  display: none;
+}
+.features .panel.active {
+  display: flex;
+}
+.features li.active {
+  border-bottom: solid 2px hsl(0deg, 94%, 66%);
+}
+
+.features .panel {
+  position: relative;
+}
+.features .panel::after {
+  content: "";
+  position: absolute;
+  background: hsl(231deg, 69%, 60%);
+  width: 200px;
+  height: 180px;
+  top: 10%;
+  left: -50px;
+  border-radius: 0 50% 50% 0;
+  z-index: -4;
+}
+@media screen and (min-width: 23.4375rem) {
+  .features .panel::after {
+    content: "";
+    position: absolute;
+    background: hsl(231deg, 69%, 60%);
+    width: 500px;
+    height: 350px;
+    top: 40%;
+    left: -200px;
+    border-radius: 0 50% 50% 0;
+    z-index: -4;
+  }
 }/*# sourceMappingURL=styles.css.map */

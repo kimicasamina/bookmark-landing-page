@@ -1,5 +1,5 @@
 .hero {
-  margin: 50px 25px;
+  margin: 50px 20px;
   position: relative;
 
     &::after {
@@ -70,6 +70,7 @@
     p {
       font-size: clamp(0.625rem, 1vh + 1rem, 0.875rem);
       margin-bottom: 25px;
+      line-height: 2;
     }
 
     .download-btn {

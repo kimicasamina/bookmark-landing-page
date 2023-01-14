@@ -5,7 +5,7 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
-  border: solid 1px red;
+  // border: solid 1px red;
 }
 
 h1, h2, h3, p {
@@ -24,6 +24,10 @@ button {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 body {

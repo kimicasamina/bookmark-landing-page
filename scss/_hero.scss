@@ -1,5 +1,5 @@
 .hero {
-  margin: 50px 20px;
+  // margin: 50px 20px;
   position: relative;
 
     &::after {
@@ -7,14 +7,15 @@
       position: absolute;
       background-color: $softBlue;
       width: 300px;
-      height: 40%;
-      top: 10%;
+      height: 25%;
+      top: 20%;
       left: 20%;
-      border-radius: 50% 0 0 50%;
+      border-radius: 80px 0 0 80px;
       z-index: -5;
     }
+    
   @media screen and (min-width: $mobile) {
-    margin: 45px;
+    // margin: 45px;
 
     position: relative;
 
@@ -22,11 +23,11 @@
       content: '';
       position: absolute;
       background-color: $softBlue;
-      width: 400px;
-      height: 70%;
+      width: 1200px;
+      height: 60%;
       top: 30%;
-      left: 80%;
-      border-radius: 50% 0 0 50%;
+      left: 55%;
+      border-radius: 150px 0 0 150px;
       z-index: -5;
     }
   }

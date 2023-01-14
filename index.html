@@ -23,65 +23,69 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="/" class="header-logo">
-          <img src="./images/logo-bookmark.svg" alt="" />
-        </a>
-        <img
-          src="./images/menu.png"
-          alt="menu"
-          class="burger-btn"
-          width="25px"
-        />
-        <div class="mobile-nav hidden">
-          <div class="mobile-menu">
-            <img src="./images/logo-bookmark-white.svg" alt="" />
-            <img
-              src="./images/icon-close.svg"
-              alt=""
-              width="25px"
-              class="close-btn"
-            />
-          </div>
+      <div class="container">
+        <nav class="nav">
+          <a href="/" class="header-logo">
+            <img src="./images/logo-bookmark.svg" alt="" />
+          </a>
+          <img
+            src="./images/menu.png"
+            alt="menu"
+            class="burger-btn"
+            width="25px"
+          />
+          <div class="mobile-nav hidden">
+            <div class="mobile-menu">
+              <img src="./images/logo-bookmark-white.svg" alt="" />
+              <img
+                src="./images/icon-close.svg"
+                alt=""
+                width="25px"
+                class="close-btn"
+              />
+            </div>
 
-          <div class="mobile-links">
+            <div class="mobile-links">
+              <a href="">FEATURES</a>
+              <a href="">PRICING</a>
+              <a href="">CONTACT</a>
+              <a href="" class="login-btn">LOGIN</a>
+            </div>
+            <div class="social-links">
+              <span><img src="./images/icon-facebook.svg" alt="" /></span>
+              <span><img src="./images/icon-twitter.svg" alt="" /></span>
+            </div>
+          </div>
+          <div class="header-links">
             <a href="">FEATURES</a>
             <a href="">PRICING</a>
             <a href="">CONTACT</a>
             <a href="" class="login-btn">LOGIN</a>
           </div>
-          <div class="social-links">
-            <span><img src="./images/icon-facebook.svg" alt="" /></span>
-            <span><img src="./images/icon-twitter.svg" alt="" /></span>
-          </div>
-        </div>
-        <div class="header-links">
-          <a href="">FEATURES</a>
-          <a href="">PRICING</a>
-          <a href="">CONTACT</a>
-          <a href="" class="login-btn">LOGIN</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <!----- HERO  ----->
     <section class="hero">
-      <div class="hero-content">
-        <img
-          src="./images/illustration-hero.svg"
-          alt="computer"
-          class="hero-img"
-        />
-        <div class="hero-body">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
-          <div class="download-btn">
-            <button class="chrome">Get it on Chrome</button>
-            <button class="firefox">Get it on Firefox</button>
+      <div class="container">
+        <div class="hero-content">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="computer"
+            class="hero-img"
+          />
+          <div class="hero-body">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="download-btn">
+              <button class="chrome">Get it on Chrome</button>
+              <button class="firefox">Get it on Firefox</button>
+            </div>
           </div>
         </div>
       </div>
@@ -89,55 +93,57 @@
 
     <!-- FEATURES  -->
     <section class="features">
-      <div class="features-intro">
-        <h2>Features</h2>
-        <p>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
-      </div>
-
-      <ul class="tab">
-        <li class="active" data-target="#panel-1">Simple Bookmarking</li>
-        <li data-target="#panel-2">Speedy Searching</li>
-        <li data-target="#panel-3">Easy Sharing</li>
-      </ul>
-      <div class="tabcontent">
-        <div id="panel-1" class="active panel">
-          <img src="./images/illustration-features-tab-1.svg" alt="" />
-          <div class="panel-body">
-            <h3>Bookmark in one click</h3>
-            <p>
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
-            </p>
-            <a href="" class="panel-info">More Info</a>
-          </div>
+      <div class="container">
+        <div class="features-intro">
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
         </div>
 
-        <div id="panel-2" class="panel">
-          <img src="./images/illustration-features-tab-2.svg" alt="" />
-          <div class="panel-body">
-            <h3>Intelligent search</h3>
-            <p>
-              Our powerful search feature will help you find saved sites in no
-              time at all. No need to trawl through all of your bookmarks.
-            </p>
-            <a href="" class="panel-info">More Info</a>
+        <ul class="tab">
+          <li class="active" data-target="#panel-1">Simple Bookmarking</li>
+          <li data-target="#panel-2">Speedy Searching</li>
+          <li data-target="#panel-3">Easy Sharing</li>
+        </ul>
+        <div class="tabcontent">
+          <div id="panel-1" class="active panel">
+            <img src="./images/illustration-features-tab-1.svg" alt="" />
+            <div class="panel-body">
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <a href="" class="panel-info">More Info</a>
+            </div>
           </div>
-        </div>
 
-        <div id="panel-3" class="panel">
-          <img src="./images/illustration-features-tab-3.svg" alt="" />
-          <div class="panel-body">
-            <h3>Share your bookmarks</h3>
-            <p>
-              Easily share your bookmarks and collections with others. Create a
-              shareable link that you can send at the click of a button.
-            </p>
-            <a href="" class="panel-info">More Info</a>
+          <div id="panel-2" class="panel">
+            <img src="./images/illustration-features-tab-2.svg" alt="" />
+            <div class="panel-body">
+              <h3>Intelligent search</h3>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <a href="" class="panel-info">More Info</a>
+            </div>
+          </div>
+
+          <div id="panel-3" class="panel">
+            <img src="./images/illustration-features-tab-3.svg" alt="" />
+            <div class="panel-body">
+              <h3>Share your bookmarks</h3>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <a href="" class="panel-info">More Info</a>
+            </div>
           </div>
         </div>
       </div>

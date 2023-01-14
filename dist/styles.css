@@ -369,4 +369,65 @@ body {
     border-radius: 0 150px 150px 0;
     z-index: -4;
   }
+}
+
+.downloads {
+  margin-top: 70px;
+}
+.downloads .download-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 23.4375rem) {
+  .downloads .download-intro {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+.downloads .extensions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 23.4375rem) {
+  .downloads .extensions {
+    flex-direction: row;
+  }
+}
+.downloads .extensions .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px hsl(229deg, 8%, 60%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  height: 350px;
+  border: 0;
+  box-shadow: 1px 3px 7px 3px rgba(0, 0, 0, 0.29);
+  position: relative;
+}
+.downloads .extensions .card p {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  border-bottom: dotted 1px hsl(229deg, 8%, 60%);
+}
+.downloads .extensions .card .add-btn {
+  background-color: hsl(231deg, 69%, 60%);
+  color: hsl(0deg, 0%, 97%);
+  border: solid 1px hsl(231deg, 69%, 60%);
+}
+.downloads .extensions .card .add-btn:hover {
+  background: transparent;
+  color: hsl(231deg, 69%, 60%);
+  border: solid 1px hsl(231deg, 69%, 60%);
+}
+.downloads .extensions .card2 {
+  margin-top: 30px;
+}
+.downloads .extensions .card3 {
+  margin-top: 60px;
 }/*# sourceMappingURL=styles.css.map */

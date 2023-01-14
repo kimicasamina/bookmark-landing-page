@@ -53,6 +53,18 @@ body {
   display: none !important;
 }
 
+.container {
+  padding: 50px 20px;
+  border: solid 2px hotpink;
+  max-width: 90rem;
+  margin-inline: auto;
+}
+@media screen and (min-width: 23.4375rem) {
+  .container {
+    padding: 50px 165px;
+  }
+}
+
 .header {
   margin: 50px 20px;
 }

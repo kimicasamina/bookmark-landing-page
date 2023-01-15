@@ -1,23 +1,12 @@
 .features {
-  // margin: 50px 20px;
   margin-bottom: 30px;
-
-  @media screen and (min-width: $mobile) {
-    // margin: 45px;
-  }
   
   .features-intro {
     width: 100%;
     max-width: 530px;
     text-align: center;
     margin-inline: auto;
- 
-    h2 {
-      font-size: 0.875rem;
-      @media screen and (min-width: $mobile) {
-        font-size: 1.5rem;
-      }
-    }
+
     p {
       font-size: 0.875rem;
     }
@@ -117,7 +106,7 @@
       background: $softBlue;
       width: 200px;
       height: 180px;
-      top: 60%;
+      top: 55%;
       left: -50px;
       border-radius: 0 50% 50% 0;
       z-index: -4;
@@ -129,7 +118,7 @@
         width: 1200px;
         height: 350px;
         top: 60%;
-        left: -200px;
+        left: -600px;
         border-radius: 0 150px 150px 0;
         z-index: -4;
       }

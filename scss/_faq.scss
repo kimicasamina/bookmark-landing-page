@@ -12,9 +12,7 @@
     .faq-card {
       width: 100%;
      
-     
       @media screen and (min-width: $mobile) {
-        // margin: 45px;
         padding: 0 280px;
       }
 
@@ -26,15 +24,7 @@
 
         span.active {
           transform: rotate(180deg);
-          // align-items: center;
-          // justify-content: center;
         }
-
-        
-<<<<<<< HEAD
-=======
-        
->>>>>>> faq-section
       }
 
       li.active {

@@ -18,7 +18,10 @@ p {
 }
 
 h2 {
-  font-size: 1.625rem;
+  font-size: 1.125rem;
+  @media screen and (min-width: $mobile) {
+    font-size: 1.625rem;
+  }
 }
 
 button {

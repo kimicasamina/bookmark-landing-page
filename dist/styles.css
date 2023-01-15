@@ -11,6 +11,15 @@ h1, h2, h3, p {
   margin-top: 0;
 }
 
+p {
+  line-height: 2;
+  color: hsl(229deg, 8%, 60%);
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
 button {
   padding: 14px;
   border-radius: 10px;
@@ -218,7 +227,6 @@ body {
 .hero .hero-content .hero-body p {
   font-size: clamp(0.625rem, 1vh + 1rem, 0.875rem);
   margin-bottom: 25px;
-  line-height: 2;
 }
 .hero .hero-content .hero-body .download-btn {
   margin-top: 25px;
@@ -268,7 +276,6 @@ body {
 }
 .features .features-intro p {
   font-size: 0.875rem;
-  line-height: 2;
 }
 @media screen and (min-width: 23.4375rem) {
   .features .features-intro {

@@ -1,0 +1,48 @@
+.faq {
+  margin-top: 50px;
+  .faq-intro {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    .faq-card {
+      width: 100%;
+     
+     
+      @media screen and (min-width: $mobile) {
+        // margin: 45px;
+        padding: 0 280px;
+      }
+
+      li {
+        padding: 20px 0;
+        display: flex;
+        border-bottom: solid 1px $grayishBlue;
+        justify-content: space-between;
+
+        span.active {
+          transform: rotate(180deg);
+          // align-items: center;
+          // justify-content: center;
+        }
+
+        
+      }
+
+      li.active {
+        color: $softRed; 
+      }
+
+      p {
+        display: none;
+        padding: 20px 0;
+      }
+    }
+
+  }
+
+}

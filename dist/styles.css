@@ -134,6 +134,9 @@ body {
   font-size: 0.75rem;
   color: hsl(229deg, 31%, 21%);
 }
+.header .header-links a:hover {
+  color: hsl(0deg, 94%, 66%);
+}
 .header .header-links a.login-btn {
   background-color: hsl(0deg, 94%, 66%);
   padding: 0.9375rem 2.1875rem;

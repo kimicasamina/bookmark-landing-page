@@ -1,7 +1,6 @@
 # bookmark-landing-page
 A responsive landing page based on a provided mockup from the frontend mentor challenge.
 
-## Overview
 
 ### The challenge
 
@@ -12,9 +11,8 @@ Users should be able to:
 
 ### Links
 
-[Solution](https://your-solution-url.com](https://www.frontendmentor.io/solutions/bookmark-landing-page-St2AB9cpYv)
-[Live Preview](https://your-live-site-url.com](https://kimicasamina.github.io/bookmark-landing-page/)
-
+- [Solution](https://www.frontendmentor.io/solutions/bookmark-landing-page-St2AB9cpYv)
+- [Live Preview](https://kimicasamina.github.io/bookmark-landing-page/)
 
 ### Built with
 

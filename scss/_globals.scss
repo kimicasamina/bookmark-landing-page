@@ -66,8 +66,12 @@ body {
 // }
 
 // VISIBILITY 
-.hidden {
-  display: none !important;
+.nav div.hidden {
+  display: none;
+}
+
+.faq .faq-card p.active {
+  display: flex ;
 }
 // .hide-for-desktop {
 //   @media screen and (min-width: $mobile) {

@@ -58,8 +58,12 @@ body {
   align-items: center;
 }
 
-.hidden {
-  display: none !important;
+.nav div.hidden {
+  display: none;
+}
+
+.faq .faq-card p.active {
+  display: flex;
 }
 
 .container {
@@ -440,4 +444,41 @@ body {
 }
 .downloads .extensions .card3 {
   margin-top: 60px;
+}
+
+.faq {
+  margin-top: 50px;
+}
+.faq .faq-intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.faq ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.faq ul .faq-card {
+  width: 100%;
+}
+@media screen and (min-width: 23.4375rem) {
+  .faq ul .faq-card {
+    padding: 0 280px;
+  }
+}
+.faq ul .faq-card li {
+  padding: 20px 0;
+  display: flex;
+  border-bottom: solid 1px hsl(229deg, 8%, 60%);
+  justify-content: space-between;
+}
+.faq ul .faq-card li span.active {
+  transform: rotate(180deg);
+}
+.faq ul .faq-card li.active {
+  color: hsl(0deg, 94%, 66%);
+}
+.faq ul .faq-card p {
+  display: none;
+  padding: 20px 0;
 }/*# sourceMappingURL=styles.css.map */

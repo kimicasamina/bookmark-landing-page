@@ -1,0 +1,32 @@
+.subscription {
+  input {
+    padding: 10px;
+    border-radius: 7px;
+    background: #eee;
+  }
+
+
+  .cta {
+    background: $softRed;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1px $softRed;
+    color: $gray;
+    &:hover {
+      color: $softRed;
+      background: $gray;
+    }
+  }
+
+
+  .subscription-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $softBlue;
+    color: #eee;
+    height: 350px;
+    text-align: center;
+  }
+}

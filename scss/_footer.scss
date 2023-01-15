@@ -1,0 +1,50 @@
+.footer {
+  // height: 280px;
+  padding: 35px 95px;
+  background: $veryDarkBlue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 160px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer-links {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: left;
+      text-align: left;
+    }
+
+    a {
+      color: #eee;
+      padding: 20px;
+      &:hover {
+        color: $softRed;
+      }
+    }
+  }
+
+  .social-links {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      color: $softRed;
+    }
+  }
+}

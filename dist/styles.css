@@ -489,4 +489,79 @@ body {
 .faq ul .faq-card p {
   display: none;
   padding: 20px 0;
+}
+
+.subscription input {
+  padding: 10px;
+  border-radius: 7px;
+  background: #eee;
+}
+.subscription .cta {
+  background: hsl(0deg, 94%, 66%);
+  padding: 10px;
+  border-radius: 7px;
+  border: solid 1px hsl(0deg, 94%, 66%);
+  color: hsl(0deg, 17%, 93%);
+}
+.subscription .cta:hover {
+  color: hsl(0deg, 94%, 66%);
+  background: hsl(0deg, 17%, 93%);
+}
+.subscription .subscription-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(231deg, 69%, 60%);
+  color: #eee;
+  height: 350px;
+  text-align: center;
+}
+
+.footer {
+  padding: 35px 95px;
+  background: hsl(229deg, 31%, 21%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 43.75rem) {
+  .footer {
+    padding: 30px 160px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.footer .footer-links {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 43.75rem) {
+  .footer .footer-links {
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+  }
+}
+.footer .footer-links a {
+  color: #eee;
+  padding: 20px;
+}
+.footer .footer-links a:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+.footer .social-links {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .social-links:hover {
+  color: hsl(0deg, 94%, 66%);
 }/*# sourceMappingURL=styles.css.map */

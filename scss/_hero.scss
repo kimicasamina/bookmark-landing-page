@@ -14,7 +14,7 @@
       z-index: -5;
     }
     
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     // margin: 45px;
 
     position: relative;
@@ -41,7 +41,7 @@
     text-align: center;
 
     
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       flex-direction: row;
       align-items: center;
       text-align: left;
@@ -58,7 +58,7 @@
   }
   
   .hero-body {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       order: -1;
       margin-right: 120px;
       
@@ -76,7 +76,7 @@
     .download-btn {
       margin-top: 25px;
       display: flex;
-      @media screen and (min-width: $mobile) {
+      @media screen and (min-width: $tablet) {
         margin-bottom: 30px;
       }
     }

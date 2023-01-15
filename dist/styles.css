@@ -53,14 +53,12 @@ body {
   line-height: 1.3;
 }
 
-.flex {
-  display: flex;
-}
-.flex-jc-sb {
-  justify-content: space-between;
-}
-.flex-ai-c {
-  align-items: center;
+.panel-info {
+  background: hsl(231deg, 69%, 60%);
+  padding: 10px;
+  border-radius: 7px;
+  color: hsl(0deg, 17%, 93%);
+  margin-top: 40px;
 }
 
 .nav div.hidden {
@@ -87,7 +85,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .header .burger-btn {
     display: none;
   }
@@ -168,7 +166,7 @@ body {
   background-color: transparent;
   color: hsl(0deg, 94%, 66%);
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .header .header-links {
     display: flex;
     align-items: center;
@@ -189,7 +187,7 @@ body {
   border-radius: 80px 0 0 80px;
   z-index: -5;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .hero {
     position: relative;
   }
@@ -210,7 +208,7 @@ body {
   flex-direction: column;
   text-align: center;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .hero .hero-content {
     flex-direction: row;
     align-items: center;
@@ -223,7 +221,7 @@ body {
   margin-inline: auto;
   margin-bottom: 70px;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .hero .hero-content .hero-body {
     order: -1;
     margin-right: 120px;
@@ -240,7 +238,7 @@ body {
   margin-top: 25px;
   display: flex;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .hero .hero-content .hero-body .download-btn {
     margin-bottom: 30px;
   }
@@ -257,8 +255,8 @@ body {
   color: hsl(231deg, 69%, 60%);
 }
 .hero .hero-content .hero-body .download-btn .firefox {
-  background: hsl(0deg, 0%, 97%);
-  border: solid 1px hsl(0deg, 0%, 97%);
+  background: hsl(0deg, 17%, 93%);
+  border: solid 1px hsl(0deg, 17%, 93%);
   color: hsl(229deg, 31%, 21%);
 }
 .hero .hero-content .hero-body .download-btn .firefox:hover {
@@ -277,7 +275,7 @@ body {
 .features .features-intro p {
   font-size: 0.875rem;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .features .features-intro {
     margin-bottom: 75px;
   }
@@ -299,7 +297,7 @@ body {
 .features .tab li:hover {
   border-bottom: solid 2px hsl(0deg, 94%, 66%);
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .features .tab {
     flex-direction: row;
   }
@@ -310,7 +308,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .features .tabcontent {
     flex-direction: row;
   }
@@ -329,7 +327,7 @@ body {
 .features .panel .panel-body {
   width: 100%;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .features .panel {
     flex-direction: row;
     justify-content: space-between;
@@ -342,6 +340,12 @@ body {
   .features .panel .panel-body {
     flex: 1;
   }
+}
+.features .panel-info {
+  background: hsl(231deg, 69%, 60%);
+  padding: 10px;
+  border-radius: 7px;
+  color: hsl(0deg, 17%, 93%);
 }
 .features .panel {
   display: none;
@@ -367,7 +371,7 @@ body {
   border-radius: 0 50% 50% 0;
   z-index: -4;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .features::after {
     content: "";
     position: absolute;
@@ -388,7 +392,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .downloads .download-intro {
     width: 50%;
     margin-inline: auto;
@@ -399,7 +403,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .downloads .extensions {
     flex-direction: row;
   }
@@ -419,15 +423,21 @@ body {
   box-shadow: 1px 3px 7px 3px rgba(0, 0, 0, 0.29);
   position: relative;
 }
+.downloads .extensions .card::before {
+  content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ..";
+  position: absolute;
+  color: hsl(229deg, 8%, 60%);
+  top: 70%;
+  left: 0;
+}
 .downloads .extensions .card p {
   text-align: center;
   padding: 20px;
   width: 100%;
-  border-bottom: dotted 1px hsl(229deg, 8%, 60%);
 }
 .downloads .extensions .card .add-btn {
   background-color: hsl(231deg, 69%, 60%);
-  color: hsl(0deg, 0%, 97%);
+  color: hsl(0deg, 17%, 93%);
   border: solid 1px hsl(231deg, 69%, 60%);
 }
 .downloads .extensions .card .add-btn:hover {
@@ -436,10 +446,10 @@ body {
   border: solid 1px hsl(231deg, 69%, 60%);
 }
 .downloads .extensions .card2 {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .downloads .extensions .card3 {
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .faq {
@@ -452,12 +462,14 @@ body {
 .faq ul {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
 .faq ul .faq-card {
   width: 100%;
 }
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 43.75rem) {
   .faq ul .faq-card {
     padding: 0 280px;
   }
@@ -465,7 +477,7 @@ body {
 .faq ul .faq-card li {
   padding: 20px 0;
   display: flex;
-  border-bottom: solid 1px hsl(229deg, 8%, 60%);
+  border-bottom: solid 1px hsl(0deg, 17%, 93%);
   justify-content: space-between;
 }
 .faq ul .faq-card li span.active {

@@ -50,24 +50,13 @@ body {
   line-height: 1.3;
 }
 
-// FLEXBOX
-.flex {
-  display: flex;
-
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-ai-c {
-    align-items: center;
-  }
+.panel-info {
+  background: $softBlue;
+  padding: 10px;
+  border-radius: 7px;
+  color: $gray;
+  margin-top: 40px;
 }
-
-// TEMPORARY
-// .logo-white color {
-//   color: #eee;
-// }
-
 // VISIBILITY 
 .nav div.hidden {
   display: none;
@@ -76,14 +65,3 @@ body {
 .faq .faq-card p.active {
   display: flex ;
 }
-// .hide-for-desktop {
-//   @media screen and (min-width: $mobile) {
-//     display: none;
-//   }
-// }
-
-// .hide-for-mobile {
-//   @media screen and (min-width: $desktop){
-//     display: none;
-//   }
-// }

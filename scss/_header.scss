@@ -1,8 +1,4 @@
 .header {
-  // margin: 50px 20px;
-  @media screen and (min-width: $mobile) {
-    // margin: 45px;
-  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -10,7 +6,7 @@
   }
 
   .burger-btn {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       display: none;
     }
   }
@@ -78,8 +74,6 @@
      font-size: 0.75rem;
      color: $veryDarkBlue;
      &:hover {
-      // border: solid 1px $softRed;
-      // background-color: transparent;
       color: $softRed;
     }
     }
@@ -102,7 +96,7 @@
     }
     
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;
     }
